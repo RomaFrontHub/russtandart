@@ -1,0 +1,51 @@
+doctype html
+html(lang='en')
+    include includes/head
+    link(rel="stylesheet", href="css/login.min.css")
+    body
+        .all
+            //Preloader
+            include includes/preloader
+            
+            //loginHead
+            .loginHead
+                .loginHead-all
+                    .loginHead-all__logo
+                        a(href="#")
+                            img(src="img/logo.png", alt="")
+
+            //Back-girl
+            img.back-girl(src="img/auth.png", alt="")
+
+            //Login
+            .login
+                .container
+                    .login-all
+                        .login-all__caption
+                            img(src="img/login-icon.svg", alt="")
+                            span Вход в систему
+                        .login-all__form
+                            form(action="#")
+                                label(for="username")
+                                    .label-title Ваш логин:
+                                    .label-subtitle Формат логина: номер телефона без 8, электронная почта, буквенно-цифровой
+                                input(type="text" id="username")
+                                label(for="password")
+                                    .label-title Ваш пароль:
+                                input(type="password" id="password")
+                                .form-block
+                                    .form-block__rem
+                                        input(type="checkbox")
+                                        span Запомнить меня?
+                                    .form-block__forg
+                                        a(href="#")
+                                            img(src="img/login-question.svg", alt="")
+                                            span Забыли пароль?
+                                .form-buttons
+                                    .form-buttons__reg
+                                        a(href="#") Регистрация
+                                    .form-buttons__log
+                                        input(type="submit" value="Войти")
+
+
+        include includes/scripts

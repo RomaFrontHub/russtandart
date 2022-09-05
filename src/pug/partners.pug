@@ -1,0 +1,238 @@
+doctype html
+html(lang='en')
+    include includes/head
+    link(rel="stylesheet", href="css/partners.min.css")
+    body
+        .all
+            //Preloader
+            include includes/preloader
+            
+            //Sites elements
+            include includes/elements
+
+            //Header
+            include includes/header
+                                
+            //Promo
+            .promo
+                .container
+                    .promo-all
+                        .promo-all__text
+                            .pages
+                                a(href="#")
+                                    .pages-main Главная
+                                .pages-arrow
+                                    svg.arrow-last(width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M5 3.99999L1.27146e-07 8L0 0L5 3.99999Z' fill='#83B143')
+                                a(href="#")
+                                    .pages-now Партнеры
+                            .title Партнеры
+
+            //becomePartner
+            .becomePartner
+                .container
+                    .becomePartner-all
+                        .becomePartner-all__text.
+                            Партнеры Кредитного бюро Русский Стандарт помогут интегрировать наши сервисы в ваши программные решения 
+                            и автоматизировать процесс обмена данными.
+                        .becomePartner-all__button
+                            a(href="#") Стать партнером
+
+            //ourPartners
+            .ourPartners
+                .container
+                    .ourPartners-all
+                        .ourPartners-all__title Наши партнеры
+                        .ourPartners-all__selection
+                            .category
+                                .category-title Компании:
+                                .category-list
+                                    .category-list__item Все
+                                    .category-list__item Интеграторы
+                            .category
+                                .category-title Интеграция:
+                                .category-list
+                                    .category-list__item Все
+                                    .category-list__item Для Банков
+                                    .category-list__item Для МФО
+                                    .category-list__item Для коллекторских компаний
+                                    .category-list__item Для страховых компаний
+                        .ourPartners-all__sponsors
+                            .sponsors__item.click-modal-one
+                                .front
+                                    img(src="img/partner1.png", alt="")
+                                .back.animate__animated.animate__fadeIn
+                                    .back-text <span>Loginom Company</span> – отечественный разработчик ПО в области продвинутого анализа данных
+                                    .back-button Узнать больше
+                            .sponsors__item.click-modal-two
+                                .front
+                                    img(src="img/partner2.png", alt="")
+                                .back.animate__animated.animate__fadeIn
+                                    .back-text <span>HES</span> - МЕЖДУНАРОДНАЯ КОМПАНИЯ, КОТОРАЯ СОЗДАЕТ ИННОВАЦИОННЫЕ ПРОДУКТЫ.
+                                    .back-button Узнать больше
+                            .sponsors__item.click-modal-three
+                                .front
+                                    img(src="img/partner3.png", alt="")
+                                .back.animate__animated.animate__fadeIn
+                                    .back-text ШИРОКИЙ СПЕКТР ПРОДУКТОВ ДЛЯ АВТОМАТИЗАЦИИ РАЗЛИЧНЫХ БИЗНЕС-ПРОЦЕССОВ.
+                                    .back-button Узнать больше
+                            .sponsors__item.click-modal-four
+                                .front
+                                    img(src="img/partner4.png", alt="")
+                                .back.animate__animated.animate__fadeIn
+                                    .back-text СЕРВИС, НАЦЕЛЕННЫЙ НА СНИЖЕНИЕ УБЫТКОВ ОТ НЕВОЗВРАТА ЗАЙМОВ И ПОВЫШЕНИЕ ДОХОДОВ КРЕДИТОРА.
+                                    .back-button Узнать больше
+                            .sponsors__item.click-modal-five
+                                .front
+                                    img(src="img/partner5.png", alt="")
+                                .back.animate__animated.animate__fadeIn
+                                    .back-text <span>SPUTNIK</span> - ЭТО ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ДЛЯ ФИНАНСОВОГО СЕКТОРА.
+                                    .back-button Узнать больше
+
+            //Popup-one
+            .popup-bg-one#popup-bg-one
+                .popup
+                    img.close-popup-one(src='img/closemodal.svg' alt='')
+                    .popup-img
+                        img(src="img/partner1modal.png", alt="")
+                    .popup-title Loginom Company – отечественный разработчик ПО в области продвинутого анализа данных.
+                    .popup-text Мы приветствуем открытость в сотрудничестве и готовы делать шаги навстречу Вашим интересам, предлагая индивидуальный подход при решении задач информационного взаимодействия. Работа с каждым из наших партнеров строится индивидуально, что позволяет создавать уникальные сервисы, адаптированные под потребности пользователей без бюрократии и длительных согласований.
+                    .popup-data
+                        .popup-data__item
+                            .caption 20+
+                            .hr
+                            .text Лет опыта
+                        .popup-data__item
+                            .caption 200+
+                            .hr
+                            .text Внедренных проектов
+                    .popup-title Готовые решения на базе Loginom для финансовых компаний:
+                    .popup-data.popup-dataTwo
+                        .popup-data__item
+                            .caption LDM
+                            .hr
+                            .text Система поддержки принятия решений
+                        .popup-data__item
+                            .caption LSM
+                            .hr
+                            .text Автоматизация процесса построения скоркарт
+                        .popup-data__item
+                            .caption LDQ
+                            .hr
+                            .text Очистка и дедупликация клиентских данных
+                    .popup-button
+                        a(href="#") Сайт компании
+
+            //Popup-two
+            .popup-bg-two#popup-bg-two
+                .popup
+                    img.close-popup-two(src='img/closemodal.svg' alt='')
+                    .popup-img
+                        img(src="img/partner2.png", alt="")
+                    .popup-title HES - МЕЖДУНАРОДНАЯ КОМПАНИЯ, КОТОРАЯ СОЗДАЕТ ИННОВАЦИОННЫЕ ПРОДУКТЫ.
+                    .popup-text HES - международная компания, которая создает инновационные продукты для банков и финансовых компаний, страховых и лизинговых организаций, кредитных бюро. Инновационные технологии разработки ПО позволяют нам решить даже самые сложные задачи кредитования. Четкая специализация и большой опыт в области финансов позволяют нам выполнять проекты на высоком уровне, что обеспечивает максимальный возврат инвестиций на разработку программного обеспечения.
+                    .popup-button
+                        a(href="#") Сайт компании
+
+            //Popup-three
+            .popup-bg-three#popup-bg-three
+                .popup
+                    img.close-popup-three(src='img/closemodal.svg' alt='')
+                    .popup-img
+                        img(src="img/partner3.png", alt="")
+                    .popup-title ШИРОКИЙ СПЕКТР ПРОДУКТОВ ДЛЯ АВТОМАТИЗАЦИИ РАЗЛИЧНЫХ БИЗНЕС-ПРОЦЕССОВ.
+                    .popup-text Компания «Аксиоматика» предлагает широкий спектр продуктов для автоматизации различных бизнес-процессов в широком спектре финансовых организаций: от небольших МФО, до крупных банков и страховых компаний. В числе прочего продукты и сервисы для интеграции с внешними поставщиками данных, обработки данных для принятия бизнес-решений, а также комплексные платформы для обеспечения работоспособности всего кредитного конвейера.
+                    .popup-button
+                        a(href="#") Сайт компании
+
+            //Popup-four
+            .popup-bg-four#popup-bg-four
+                .popup
+                    img.close-popup-four(src='img/closemodal.svg' alt='')
+                    .popup-img
+                        img(src="img/partner4.png", alt="")
+                    .popup-title СЕРВИС, НАЦЕЛЕННЫЙ НА СНИЖЕНИЕ УБЫТКОВ ОТ НЕВОЗВРАТА ЗАЙМОВ И ПОВЫШЕНИЕ ДОХОДОВ КРЕДИТОРА.
+                    .popup-text.
+                        SCORISTA – это сервис повышения качества оценки кредитных рисков, нацеленный на снижение убытков от невозврата займов и повышение доходов кредитора.
+                        <br><br>
+                        SCORISTA предлагает своим клиентам широкий спектр продуктов и услуг: оценку заемщиков с готовым кредитным решением, определение рекомендуемой суммы займа, разработку скор-карт, наборы предиктивных факторов для построения скор-карт и многое другое.
+                        <br><br>
+                        Разработки в области искусственного интеллекта и технологии машинного обучения позволяют исключительно быстро выполнять поставленные задачи и гарантировать клиенту высокое качество результатов работы сервиса.
+                        <br><br>
+                        Работает в России с 2014 года.
+                    .popup-button
+                        a(href="#") Сайт компании
+            
+            //Popup-five
+            .popup-bg-five#popup-bg-five
+                .popup
+                    img.close-popup-five(src='img/closemodal.svg' alt='')
+                    .popup-img
+                        img(src="img/partner5.png", alt="")
+                    .popup-title SPUTNIK - ЭТО ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ДЛЯ ФИНАНСОВОГО СЕКТОРА.
+                    .popup-text Sputnik - это программное обеспечение для финансового сектора, мы помогаем микрофинансовым организациям, кредитным кооперативам, банкам, fintech-стартапам, брокерам и другим финансовым институтам автоматизировать бизнес-процессы проверки клиента, выдачи кредита или займа, приема вклада или сбережения и многое другое.
+                    .popup-button
+                        a(href="#") Сайт компании
+            
+            //Work
+            .work
+                .container
+                    .work-all
+                        .work-all__desc
+                            .desc-title Вам понравится работать с Кредитным бюро  Русский Стандарт
+                            .desc-text Мы приветствуем открытость в сотрудничестве и готовы делать шаги навстречу Вашим интересам, предлагая индивидуальный подход при решении задач информационного взаимодействия. Работа с каждым из наших партнеров строится индивидуально, что позволяет создавать уникальные сервисы, адаптированные под потребности пользователей без бюрократии и длительных согласований.
+                            .desc-main
+                                .desc-main__item
+                                    .year 2005
+                                    .hr
+                                    .text Год основания кредитного бюро Русский стандарт
+                                .desc-main__item
+                                    .year 2010
+                                    .hr
+                                    .text Бюро запускает дополнительные сервисы для своих клиентов 
+                                .desc-main__item
+                                    .year 2015
+                                    .hr
+                                    .text Коллекторские агентства выгружают кредитные истории в Бюро 
+                                .desc-main__item
+                                    .year 2019
+                                    .hr
+                                    .text КБРС - один из лидеров российского информационного рынка кредитных историй
+                        .work-all__statistic
+                            .statistic-title На сегодняшний день КБРС является одним из лидеров российского информационного рынка кредитных историй
+                            .statistic-main
+                                .main-item
+                                    .main-item__wrapper
+                                        span 85 %
+                                        span Хит бюро<br>(по запросам)
+                                .main-item
+                                    .main-item__wrapper
+                                        span 50 %
+                                        span Хит на основную и<br> информационную<br> части кредитной<br> истории
+
+            //Connect
+            .connect
+                .container
+                    .connect-all
+                        .connect-all__title Мы готовы связаться с вами, если у вас остались вопросы
+                        .connect-all__form
+                            form(action="#")
+                                .form-main
+                                    .form-main__left
+                                        .name.main-input
+                                            input(type="text", placeholder="Ваше имя")
+                                        .tel.main-input
+                                            input(type="tel", placeholder="Контактый телефон")
+                                        .email.main-input
+                                            input(type="email", placeholder="E-mail")
+                                    .form-main__right
+                                        textarea(name="comment" placeholder="Комментарий") 
+                                .form-submit
+                                    .form-submit__text Нажимая на кнопку «Отправить» Вы даете согласие на обработку своих персональных данных в соответствии со статьей 9 Федерального закона от 27 июля 2006 г. N 152-ФЗ «О персональных данных»
+                                    .form-submit__button
+                                        input(type="submit", value="Отправить")
+
+
+            include includes/footer
+
+        include includes/scripts

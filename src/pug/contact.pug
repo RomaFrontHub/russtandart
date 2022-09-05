@@ -1,0 +1,78 @@
+doctype html
+html(lang='en')
+    include includes/head
+    link(rel="stylesheet", href="css/contact.min.css")
+    body
+        .all
+            //Preloader
+            include includes/preloader
+            
+            //Sites elements
+            include includes/elements
+
+            //Header
+            include includes/header
+                                
+            //Map
+            .map
+                iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3Abe784ce71af8b5c8cc07437726495b6ff7735144e238dc4733e4f23b3d0fe855&source=constructor' width='100%' height='1170' frameborder='0')
+                .information
+                    .container
+                        .information-all
+                            .information-all__title Контакты
+                            .information-all__main
+                                .main-title ООО «Кредитное бюро Русский Стандарт»
+                                .main-tabs
+                                    .bg
+                                    a(href="#/tabs1").main-tabs__item.tab-one.tab-active Адреса и телефоны
+                                    a(href="#/tabs2").main-tabs__item.tab-two Реквизиты
+                                .main-inner-one#tabs1
+                                    .main-contacts
+                                        .main-contacts__item
+                                            .icon
+                                                img(src="img/geo.svg", alt="")
+                                            .text 105318, Москва, Семеновская площадь, дом 7, корпус 1
+                                        .main-contacts__item
+                                            .icon
+                                                img(src="img/phone2.svg", alt="")
+                                            .text
+                                                a(href="tel:+7 (495) 609-64-24") +7 (495) 609-64-24
+                                        .main-contacts__item
+                                            .icon
+                                                img(src="img/email.svg", alt="")
+                                            .text
+                                                a(href="mailto:rscb@rs-cb.ru") rscb@rs-cb.ru
+                                    .main-desc
+                                        .main-desc__caption.caption-one Время работы:
+                                        .main-desc__caption.caption-two Прием физических лиц:
+                                        .main-desc__text 105318, Москва, Семеновская площадь, дом 7, корпус 1
+                                        .main-desc__caption.caption-two Поддержка физических лиц:
+                                        .main-desc__text
+                                            span 8 (495) 609-64-24
+                                            span (доб. 123)
+                                        .main-desc__caption.caption-two Поддержка юридических лиц:
+                                        .main-desc__text
+                                            span 8 (495) 609-64-24
+                                            span (доб. 115)
+                                .main-inner-two#tabs2
+                                    .main-desc
+                                        .main-desc__caption.caption-two Полное наименование:
+                                        .main-desc__text Общество с ограниченной ответственностью «Кредитное бюро Русский Стандарт»
+                                        .main-desc__caption.caption-two Краткое наименование:
+                                        .main-desc__text ООО «Кредитное бюро Русский Стандарт»
+                                        .main-desc__caption.caption-two Дата регистрации:
+                                        .main-desc__text 09.08.2005
+                                        .main-desc__caption.caption-two ИНН/КПП:
+                                        .main-desc__text 7719562097/771901001
+                                        .main-desc__caption.caption-two ОГРН:
+                                        .main-desc__text 1057747734934
+                                        .main-desc__caption.caption-two ОКВЭД:
+                                        .main-desc__text 72.4, 74.84, 72.6, 91.1, 92.4
+                                        .main-desc__caption.caption-two Банковские реквизиты:
+                                        .main-desc__text Р/c — 40702810700000001140 АО «Банк Русский Стандарт» Москва К/с — 30101810845250000151 БИК 044525151
+                                        .main-desc__caption.caption-two Юридический и почтовый адрес:
+                                        .main-desc__text 105318, г. Москва, Семеновская площадь, д. 7, корпус 1
+
+            include includes/footer
+
+        include includes/scripts

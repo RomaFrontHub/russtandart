@@ -1,0 +1,145 @@
+doctype html
+html(lang='en')
+    include includes/head
+    link(rel="stylesheet", href="css/storage.min.css")
+    body
+        .all
+            //Preloader
+            include includes/preloader
+            
+            //Sites elements
+            include includes/elements
+
+            //Header
+            include includes/header
+                                
+            //Promo
+            .promo
+                .container
+                    .promo-all
+                        .promo-all__text
+                            .pages
+                                a(href="#")
+                                    .pages-main Главная
+                                .pages-arrow
+                                    svg(width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M5 3.99999L1.27146e-07 8L0 0L5 3.99999Z' fill='#83B143')
+                                a(href="#")
+                                    .pages-main Корпоративным клиентам
+                                .pages-arrow
+                                    svg(width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M5 3.99999L1.27146e-07 8L0 0L5 3.99999Z' fill='#83B143')
+                                a(href="#")
+                                    .pages-main Банки, МФО и КПК
+                                .pages-arrow
+                                    svg(width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M5 3.99999L1.27146e-07 8L0 0L5 3.99999Z' fill='#83B143')
+                                a(href="#")
+                                    .pages-main Кредитные истории
+                                .pages-arrow
+                                    svg.arrow-last(width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M5 3.99999L1.27146e-07 8L0 0L5 3.99999Z' fill='#83B143')
+                                a(href="#")
+                                    .pages-now Хранение кредитных условий
+                            .title Хранение кредитных историй
+
+            //smallText
+            .smallText
+                .container
+                    .smallText-text <span>Хранение кредитных историй</span> в БКИ позволяет кредитным и не кредитным организациям защищать себя от недобросовестных заемщиков, партнеров, арендаторов, абонентов и других контрагентов.
+            
+            //Usage
+            .usage
+                .container
+                    .usage-all
+                        .usage-all__left
+                            .usage-text.
+                                Передача данных о выданных займах в БКИ – это одна из важнейших обязанностей для банков, 
+                                микрофинансовых организаций и кредитных потребительских кооперативов. 
+                                Корректно сформированная и своевременно переданная в бюро информация важна в первую очередь 
+                                для самих кредитных организаций. Не секрет, что наличие просрочек и кредитная нагрузка 
+                                клиента играют большое значение в принятии решения по заявке.<br><br>
+                                В соответствии с поправками, внесёнными в закон 218-ФЗ «О кредитных историях», 
+                                передавать КИ заёмщиков обязаны не только банки, но и МФО, кредитные кооперативы, 
+                                а также все организации, получившее права требования по займам. При этом компании, 
+                                работающие в сфере ЖКХ, получили возможность передавать в БКИ данные по неисполненным 
+                                судебным требованиям о погашении задолженности.
+                            .usage-explane
+                                .usage-explane__title Для чего используется
+                                .usage-explane__list
+                                    .list
+                                        .list-item
+                                            .list-item__icon
+                                            span Предоставление полноценного и подробного отчета о загрузке КИ в бюро.
+                                        .list-item
+                                            .list-item__icon
+                                            span Наличие собственного удостоверяющего центра, который позволит избежать дополнительных издержке при передаче персональных данных;
+                                        .list-item
+                                            .list-item__icon
+                                            span Использование других сервисов КБРС на специальных условиях;
+                                        .list-item
+                                            .list-item__icon
+                                            span Предоставление тестовой среды для облегчения процесса автоматизации.
+                                .usage-explane__desc.
+                                    Для подключения сервиса заполните специальную форму на сайте или 
+                                    позвоните по телефону. Персональный менеджер расскажет обо всех подробностях и 
+                                    ответит на все вопросы, которые у вас возникнут.
+                        .usage-all__right
+                            .usage-block
+                                .usage-block__title Как подключить сервис:
+                                .usage-block__list
+                                    .list-item
+                                        .list-item__count 1
+                                        .list-item__text.
+                                            Воспользуйтесь формой обратной связи внизу страницы
+                                    .list-item
+                                        .list-item__count 2
+                                        .list-item__text.
+                                            Или обратитесь к персональному менеджеру по телефону:
+                                .usage-block__phone
+                                    a(href="tel:+7 (495) 609-64-24") +7 (495) 609-64-24
+
+            //Connect
+            .connect
+                .container
+                    .connect-all
+                        .connect-all__title Мы готовы связаться с вами, если у вас остались вопросы
+                        .connect-all__form
+                            form(action="#")
+                                .form-main
+                                    .form-main__left
+                                        .name.main-input
+                                            input(type="text", placeholder="Ваше имя")
+                                        .tel.main-input
+                                            input(type="tel", placeholder="Контактый телефон")
+                                        .email.main-input
+                                            input(type="email", placeholder="E-mail")
+                                    .form-main__right
+                                        textarea(name="comment" placeholder="Комментарий") 
+                                .form-submit
+                                    .form-submit__text Нажимая на кнопку «Отправить» Вы даете согласие на обработку своих персональных данных в соответствии со статьей 9 Федерального закона от 27 июля 2006 г. N 152-ФЗ «О персональных данных»
+                                    .form-submit__button
+                                        input(type="submit", value="Отправить")
+
+            //Others
+            .others
+                .container
+                    .others-all
+                        .others-all__title Другие услуги, которые могут быть вам интересны
+                        .others-all__main
+                            a(href="#")
+                                .main-item
+                                    .main-item__img
+                                        img(src="img/info1.svg", alt="")
+                                    .main-item__title Кредитный отчет
+                                    .main-item__subtitle Основной источник информации кредитных организаций для принятия решений о выдаче займа…
+                            a(href="#")
+                                .main-item
+                                    .main-item__img
+                                        img(src="img/info3.svg", alt="")
+                                    .main-item__title Сервис ЦККИ
+                                    .main-item__subtitle Это структурное подразделение Банка России, которое ведет базу данных для поиска БКИ, содержащих кредитные истории субъектов кредитных историй… 
+
+            include includes/footer
+
+        include includes/scripts
